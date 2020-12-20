@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-apiclient" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-ca" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-httputil" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-log" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-mail" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pkg/playground-session" vcs="Git" />
+  </component>
+</project>

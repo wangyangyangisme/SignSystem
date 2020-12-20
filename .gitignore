@@ -1,0 +1,11 @@
+/warden
+.*.swp
+/*.key
+/*.crt
+/*.log
+/*.pem
+signers/
+/TODO.md
+/default
+pkg
+.vscode
