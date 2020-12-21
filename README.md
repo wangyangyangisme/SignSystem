@@ -244,7 +244,7 @@ hook code in `src/main/warden.go`:
           "someapp-debug": {
             "AuthorizedKeys": [],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "./certs/sample-debug.crt",
                   "KeyPath": "./certs/sample-debug.key",
                   "Type": "RSA",
@@ -256,7 +256,7 @@ hook code in `src/main/warden.go`:
           "someapp-release": {
             "AuthorizedKeys": ['00:11:22:33:44:55:66:77:88:00:aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:00:aa:bb:cc:dd:ee:ff'],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "./certs/sample-release.crt",
                   "KeyPath": "./certs/sample-release.key",
                   "Type": "RSA",
@@ -416,7 +416,7 @@ like this:
           "playstore-app": {
             "AuthorizedKeys": ["99887766554433221100ffeedccbbaa99887766554433221100ffeedccbbaa"],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/playstore-app/prod.crt",
                   "KeyPath": "/opt/private/signing-keys/playstore-app/prod.key",
                   "Type": "RSA",
@@ -429,7 +429,7 @@ like this:
           "model-dev-media": {
             "AuthorizedKeys": [],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/media-dev.crt",
                   "KeyPath": "/opt/private/signing-keys/model/media-dev.key",
                   "Type": "RSA",
@@ -441,7 +441,7 @@ like this:
           "model-prod-media": {
             "AuthorizedKeys": ["00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff"],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/media-prod.crt",
                   "KeyPath": "/opt/private/signing-keys/model/media-prod.key",
                   "Type": "RSA",
@@ -455,7 +455,7 @@ like this:
           "model-dev-platform": {
             "AuthorizedKeys": [],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/platform-dev.crt",
                   "KeyPath": "/opt/private/signing-keys/model/platform-dev.key",
                   "Type": "RSA",
@@ -467,7 +467,7 @@ like this:
           "model-prod-platform": {
             "AuthorizedKeys": ["00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff"],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/platform-prod.crt",
                   "KeyPath": "/opt/private/signing-keys/model/platform-prod.key",
                   "Type": "RSA",
@@ -481,7 +481,7 @@ like this:
           "model-dev-shared": {
             "AuthorizedKeys": [],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/shared-dev.crt",
                   "KeyPath": "/opt/private/signing-keys/model/shared-dev.key",
                   "Type": "RSA",
@@ -493,7 +493,7 @@ like this:
           "model-prod-shared": {
             "AuthorizedKeys": ["00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff"],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/shared-prod.crt",
                   "KeyPath": "/opt/private/signing-keys/model/shared-prod.key",
                   "Type": "RSA",
@@ -507,7 +507,7 @@ like this:
           "model-dev-releasekey": {
             "AuthorizedKeys": [],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/releasekey-dev.crt",
                   "KeyPath": "/opt/private/signing-keys/model/releasekey-dev.key",
                   "Type": "RSA",
@@ -519,7 +519,7 @@ like this:
           "model-prod-releasekey": {
             "AuthorizedKeys": ["00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff:00:11:22:33:44:55:66:77:88:99:00:aa:bb:cc:dd:ee:ff"],
             "Config": {
-              "SigningKeys": [
+              "SigningCerts": [
                 { "CertPath": "/opt/private/signing-keys/model/releasekey-prod.crt",
                   "KeyPath": "/opt/private/signing-keys/model/releasekey-prod.key",
                   "Type": "RSA",

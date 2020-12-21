@@ -10,7 +10,7 @@ import (
 
 func main() {
 	pool := x509.NewCertPool()
-	caCertPath := "./cfssl/ca.pem"
+	caCertPath := "C:/Users/wangyangyang/Desktop/SignSystem/client/ca.pem"
 	caCrt, err := ioutil.ReadFile(caCertPath)
 	if err != nil {
 		fmt.Println(err.Error())
@@ -19,7 +19,7 @@ func main() {
 
 	pool.AppendCertsFromPEM(caCrt)
 
-	cliCrt, err := tls.LoadX509KeyPair("cfssl/client.pem", "cfssl/client-key.pem")
+	cliCrt, err := tls.LoadX509KeyPair("C:/Users/wangyangyang/Desktop/SignSystem/client/client.pem", "C:/Users/wangyangyang/Desktop/SignSystem/client/client-key.pem")
 	if err != nil {
 		fmt.Println(err.Error())
 		return
@@ -35,7 +35,7 @@ func main() {
 
 	client := &http.Client{Transport: tr}
 
-	resp, err := client.Get("https://127.0.0.1:9000/siginers")
+	resp, err := client.Get("https://127.0.0.1:9000/signers")
 	if err != nil {
 		fmt.Println(err.Error())
 		return
